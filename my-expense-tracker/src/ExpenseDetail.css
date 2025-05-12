@@ -1,0 +1,72 @@
+/* Container for the entire expense detail page */
+.container {
+  background-image: url('./expense.jpg'); /* Replace with your desired background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Title of the page */
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Styling the div that holds the expense details */
+.expense-details {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+/* Styling for individual details */
+.expense-details p {
+  font-size: 1.2rem;
+  margin: 8px 0;
+}
+
+/* Buttons container */
+div button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Edit button style */
+div button:first-of-type {
+  background-color: #28a745;
+  color: white;
+  margin-right: 10px;
+}
+
+div button:first-of-type:hover {
+  background-color: #218838;
+}
+
+/* Delete button style */
+div button:last-of-type {
+  background-color: #dc3545;
+  color: white;
+}
+
+div button:last-of-type:hover {
+  background-color: #c82333;
+}

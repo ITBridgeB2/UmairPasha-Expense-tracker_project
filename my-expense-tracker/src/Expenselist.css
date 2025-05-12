@@ -1,0 +1,85 @@
+/* Container for the entire page with background image */
+.expense-container {
+  background-image: url('expense.jpg'); /* Ensure this image exists in public/ folder */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  padding: 40px 20px;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header container, including title and button */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 20px;
+}
+
+/* Heading styles */
+h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Add New Expense Button */
+.add-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-btn:hover {
+  background-color: #218838;
+}
+
+/* Expense List Styles */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Expense item styles */
+li {
+  margin-bottom: 12px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+/* Link styles */
+a {
+  color: #ffd700;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #ffc107;
+  text-decoration: underline;
+}
